@@ -1,5 +1,5 @@
 <template>
-  <DragEndDropComoponent />
+  <DragEndDropComoponent/>
 </template>
 
 <script>
