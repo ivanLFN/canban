@@ -22,15 +22,20 @@
               New
             </p>
             <div class="w-100 text-end">
-              <v-btn
-                @click="sortByRating(1)"
-                class="btn-classic"
-                elevation="0"
-                dense
-                style="padding: 0px; min-width: 30px;"
-              >
-                <img class="w-100" style="width: 30px; height: 30px;" src="/images/icons8-sort-50.png" alt="Image Description">
-              </v-btn>
+              <v-tooltip text="Sort by Rating">
+                <template v-slot:activator="{ props }">
+                  <v-btn
+                    v-bind="props"
+                    @click="sortByRating(1)"
+                    class="btn-classic"
+                    elevation="0"
+                    dense
+                    style="padding: 0px; min-width: 30px;"
+                  >
+                    <img class="w-100" style="width: 30px; height: 30px;" src="/images/icons8-sort-50.png" alt="Image Description">
+                  </v-btn>
+                </template>
+              </v-tooltip>
               <v-dialog max-width="500">
                 <template v-slot:activator="{ props: activatorNewItemProps }">
                   <v-btn
@@ -98,15 +103,20 @@
               Process
             </p>
             <div class="w-100 text-end">
-              <v-btn
-                @click="sortByRating(2)"
-                class="btn-classic"
-                elevation="0"
-                dense
-                style="padding: 0px; min-width: 30px;"
-              >
-                <img class="w-100" style="width: 30px; height: 30px;" src="/images/icons8-sort-50.png" alt="Image Description">
-              </v-btn>
+              <v-tooltip text="Sort by Rating">
+                <template v-slot:activator="{ props }">
+                  <v-btn
+                    v-bind="props"
+                    @click="sortByRating(2)"
+                    class="btn-classic"
+                    elevation="0"
+                    dense
+                    style="padding: 0px; min-width: 30px;"
+                  >
+                    <img class="w-100" style="width: 30px; height: 30px;" src="/images/icons8-sort-50.png" alt="Image Description">
+                  </v-btn>
+                </template>
+              </v-tooltip>
               <v-dialog max-width="500">
                 <template v-slot:activator="{ props: activatorNewItemProps }">
                   <v-btn
@@ -174,15 +184,20 @@
               Done
             </p>
             <div class="w-100 text-end">
-              <v-btn
-                @click="sortByRating(3)"
-                class="btn-classic"
-                elevation="0"
-                dense
-                style="padding: 0px; min-width: 30px;"
-              >
-              <img class="w-100" style="width: 30px; height: 30px;" src="/images/icons8-sort-50.png" alt="Image Description">
-            </v-btn>
+              <v-tooltip text="Sort by Rating">
+                <template v-slot:activator="{ props }">
+                  <v-btn
+                    v-bind="props"
+                    @click="sortByRating(3)"
+                    class="btn-classic"
+                    elevation="0"
+                    dense
+                    style="padding: 0px; min-width: 30px;"
+                  >
+                    <img class="w-100" style="width: 30px; height: 30px;" src="/images/icons8-sort-50.png" alt="Image Description">
+                  </v-btn>
+                </template>
+              </v-tooltip>
               <v-dialog max-width="500">
                 <template v-slot:activator="{ props: activatorNewItemProps }">
                   <v-btn
