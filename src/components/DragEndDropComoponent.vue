@@ -22,6 +22,15 @@
               New
             </p>
             <div class="w-100 text-end">
+              <v-btn
+                @click="sortByRating(1)"
+                class="btn-classic"
+                elevation="0"
+                dense
+                style="padding: 0px; min-width: 30px;"
+              >
+                <img class="w-100" style="width: 30px; height: 30px;" src="/images/icons8-sort-50.png" alt="Image Description">
+              </v-btn>
               <v-dialog max-width="500">
                 <template v-slot:activator="{ props: activatorNewItemProps }">
                   <v-btn
@@ -89,6 +98,15 @@
               Process
             </p>
             <div class="w-100 text-end">
+              <v-btn
+                @click="sortByRating(2)"
+                class="btn-classic"
+                elevation="0"
+                dense
+                style="padding: 0px; min-width: 30px;"
+              >
+                <img class="w-100" style="width: 30px; height: 30px;" src="/images/icons8-sort-50.png" alt="Image Description">
+              </v-btn>
               <v-dialog max-width="500">
                 <template v-slot:activator="{ props: activatorNewItemProps }">
                   <v-btn
@@ -156,6 +174,15 @@
               Done
             </p>
             <div class="w-100 text-end">
+              <v-btn
+                @click="sortByRating(3)"
+                class="btn-classic"
+                elevation="0"
+                dense
+                style="padding: 0px; min-width: 30px;"
+              >
+              <img class="w-100" style="width: 30px; height: 30px;" src="/images/icons8-sort-50.png" alt="Image Description">
+            </v-btn>
               <v-dialog max-width="500">
                 <template v-slot:activator="{ props: activatorNewItemProps }">
                   <v-btn
@@ -315,13 +342,24 @@ export default {
       }
     };
 
+    const sortByRating = (column) => {
+      const listItems = responseData.value.filter((item) => item.list === column);
+      listItems.sort((a, b) => b.rating - a.rating);
+      listItems.forEach((item, index) => {
+        const originalIndex = responseData.value.findIndex((i) => i.id === item.id);
+        responseData.value.splice(originalIndex, 1);
+        responseData.value.splice(index, 0, item);
+      });
+    };
+
     return {
       responseData,
       formItem,
       saveData,
       getList,
       startDrag,
-      onDrop
+      onDrop,
+      sortByRating
     };
   }
 }
