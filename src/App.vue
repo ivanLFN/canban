@@ -14,7 +14,7 @@
   text-align: center;
   color: #2c3e50;
   background-color: rgb(233, 233, 233);
-  height: 100vh;
+  min-height: 100vh;
 }
 
 nav {
