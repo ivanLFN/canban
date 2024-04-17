@@ -496,7 +496,7 @@ export default {
             category: "men's clothing",
             price: '$109.95',
             rating: 3.9,
-            list: '1',
+            list: 1,
             show: false
           },
           {
@@ -508,7 +508,7 @@ export default {
             category: "men's clothing",
             price: '$22.3',
             rating: 4.1,
-            list: '1',
+            list: 1,
             show: false
           },
           {
@@ -520,7 +520,7 @@ export default {
             category: 'electronics',
             price: '$55.99',
             rating: 4.8,
-            list: '1',
+            list: 1,
             show: false
           },
           {
@@ -532,7 +532,7 @@ export default {
             category: "men's clothing",
             price: '$15.99',
             rating: 2.1,
-            list: '2',
+            list: 2,
             show: false
           },
           {
@@ -544,7 +544,7 @@ export default {
             category: 'Shoes',
             price: '$59.99',
             rating: 4.6,
-            list: '3',
+            list: 3,
             show: false
           },
           {
@@ -556,7 +556,7 @@ export default {
             category: 'Shoes',
             price: '$168',
             rating: 3.9,
-            list: '2',
+            list: 2,
             show: false
           }
         ];
